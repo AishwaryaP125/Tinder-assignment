@@ -29,6 +29,10 @@
             $('#add').show();
             $('#display-image').css("border","4px dashed black");
         });
+            $('#done').hide();
+        $('#sub').click(function(){
+        $('#done').toggle();
+        });
        });
        </script>
 </head>
@@ -176,6 +180,10 @@ label{
             </fieldset>
         </form>
         </div>
+        <br>
+        <div class="alert alert-success" id="done" style="width:fit-content;margin-left:530px">
+            <h5>Profile Succesfully Created!</h5>
+          </div>
 
         <script>
  const image_input = document.querySelector("#image-input");
