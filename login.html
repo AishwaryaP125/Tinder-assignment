@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <!-- Latest compiled and minified CSS -->
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <!-- Latest compiled JavaScript -->
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+   <!--fonts google-->
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Libre+Bodoni&family=Nunito:wght@200&family=Playfair+Display:wght@800&family=Sora:wght@700;800&display=swap" rel="stylesheet">
+   <script src="https://kit.fontawesome.com/20fddd67d0.js" crossorigin="anonymous"></script>
+</head>
+<style>
+.nav{
+        background: rgb(0,0,0);
+    }
+#main{
+    background-image: url('l2.jpg');
+    background-size: 400% 400%;
+    animation: gradient 335s ease infinite;
+    height: 599px;
+    border-bottom: 5px black solid;
+}
+body{
+background-color: rgb(0, 0, 0);
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+   
+.nav-link{
+        color: rgb(255, 255, 255);
+        font-size: larger;
+    }
+
+
+.nav-link:hover{
+   color: #d31941;
+}
+/*the login*/
+
+   
+.container-fluid h1 {
+    font-weight: bold;
+    margin: 0;
+    }
+    
+       
+    .container-fluid h2 {
+    text-align: center;
+    }
+    
+       
+    .container-fluid p {
+    font-size: 14px;
+    font-weight: 100;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    margin: 20px 0 30px;
+    }
+    
+    .container-fluid span{
+    font-size: 12px;
+    }
+    
+    .container-fluid a{
+    color: rgb(253, 0, 67);
+    font-size: 14px;
+    text-decoration: none;
+    margin: 15px 0;
+    }
+    
+    button {
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: #d31941;
+    color: #FFFFFF;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: transform 80ms ease-in;
+    }
+    
+    button:active {
+    transform: scale(0.95);
+    }
+    
+    button:focus {
+    outline: none;
+    }
+    
+    button.ghost {
+    background-color: transparent;
+    border-color: #FFFFFF;
+    color: #000000;
+    border: 2px black solid;
+    }
+    
+    form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+    }
+    
+    input {
+    background-color: #eee;
+    border: 1px #000000 solid;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    }
+    
+    .container {
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
+    0 10px 10px rgba(0,0,0,0.22);
+    position: relative;
+    overflow: hidden;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    border: 2px black solid;
+    box-shadow: rgba(255, 255, 255, 0.4) 0px 2px 8px, rgba(255, 255, 255, 0.3) 0px 7px 13px -3px, rgba(255, 255, 255, 0.2) 0px -3px 0px inset;
+    }
+    .container:hover{
+        box-shadow: 0 0 0 3px #fc61ff;
+    }
+    .form-container {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: all 0.6s ease-in-out;
+    }
+    
+    .sign-in-container {
+    left: 0;
+    width: 50%;
+    z-index: 2;
+    }
+    
+  
+    
+    .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    transition: transform 0.6s ease-in-out;
+    z-index: 100;
+    }
+    
+    
+    
+    .overlay {
+    background: #d31941;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0 0;
+    border-radius: 30px;
+    color: #FFFFFF;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    }
+    
+    .overlay-panel {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    top: 0;
+    border-left: 2px black solid;
+    border-radius: 0 30px 30px 0px;
+    height: 100%;
+    width: 50%;
+    transform: translateX(0);
+    transition: transform 0.6s ease-in-out;
+    }
+    
+    
+    
+    .overlay-right {
+    right: 0;
+    transform: translateX(0);
+    border: 2px black solid;
+    }
+    
+    
+    
+    .social-container {
+    margin: 20px 0;
+    }
+    
+    .social-container a {
+    border: 1px solid #000000;
+    border-radius: 50%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 40px;
+    width: 40px;
+    }
+    .social-container a:hover{
+        box-shadow: 0 0 0 2px #d31941;
+    }
+    #signUp{
+    background-color: #DDDDDD;
+    }
+    </style>
+<body >
+   
+    <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html"><img src="logo.png" style="height:30px;"></a><p></p>
+        </li>
+        <li class="nav-item" style="margin-left:690px">
+            <a class="nav-link" href="#">Products</a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Learn</a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Safety</a> 
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Support</a> 
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html" style="font-weight:bolder;color: #d31941;font-family:'Playfair Display', serif;">Login</a> 
+      </li>
+    </ul>
+    <div class="divide" style="background-color:#ff00f2;margin-top:-10px;height:1px;"> 
+    </div>
+    <div class="container-fluid" id="main">
+        <br>
+        <br>
+        <div class="container" id="container">
+            <div class="form-container sign-in-container">
+                <form action="swipe.html">
+                    <h1>Sign in</h1>
+                    <div class="social-container">
+                        <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="#" class="social"><i class="fa-solid fa-phone-flip"></i></a>
+                    </div>
+                    <span>or use your account</span>
+                    <input type="email" placeholder="Email" required/>
+                    <input type="password" placeholder="Password" required/>
+                    <a href="#">Forgot your password?</a>
+                    <button type="Submit">Log In</button>
+                </form>
+            </div>
+            <div class="overlay-container">
+                <div class="overlay">
+                    <div class="overlay-panel overlay-right">
+                        <h1 style="color:#000000">Don't have an Account yet?</h1>
+                        <p>Enter your personal details and start journey with us</p>
+                        <a id="reg" href="register.html"><button class="ghost" id="signUp">Sign Up</button></a>
+                    </div>
+                </div>
+            </div>
+          </div>
+    </div>
+
+
+</body>
+</html>
