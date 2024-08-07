@@ -9,4 +9,7 @@ Redesigned tinder with the following pages and their functions: <br/>
   * Upload profile picture(This is interactive and User can upload pictures and delete them.) <br/>
 4) Swipe (contains the chatbox and the profiles to swipe) <br/>
 5) Profile page(No interactive elements) <br/>  
-  
+
+URL:
+tinder-assignment.pages.dev
+
