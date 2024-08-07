@@ -11,5 +11,5 @@ Redesigned tinder with the following pages and their functions: <br/>
 5) Profile page(No interactive elements) <br/>  
 
 URL:
-[Tinder-Redesign](tinder-assignment.pages.dev)
+[Tinder-Redesign]('tinder-assignment.pages.dev')
 
